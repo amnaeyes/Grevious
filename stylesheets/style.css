@@ -1,0 +1,113 @@
+/* Google fonts, to use:
+ * font-family: 'Rock Salt', cursive;
+ * font-family: 'Lato', sans-serif;
+ */
+
+/* The HTML tag is a great one for specifying base font size */
+html {
+  /* Font stuff */
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+
+  /* Color stuff */
+  background: #222;
+  color: #ddd;
+}
+
+body {
+  margin: 0 0 1rem 0;
+}
+
+header {
+  height: 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertical align */
+
+  border-bottom: 1px solid rgba(0, 127, 255, 0.2);
+
+  margin-bottom: 1rem;
+}
+
+header .logo {
+  padding: 0.5rem;
+  color: rgba(255, 0, 0, 0.6);
+  font-family: 'Rock Salt', cursive;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+header nav > a {
+  padding: 0.5rem;
+
+  color: inherit;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 100;
+
+}
+header nav > a:hover {
+  color: #fff;
+}
+
+main {
+  max-width: 720px;
+  min-width: calc(480px + 2rem);
+
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.contact b {
+  color: rgba(0, 127, 255, 0.7);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.index {
+  position: relative;
+
+  min-height: 522px;
+  padding: 1rem;
+}
+
+.index::after {
+  content: "";
+  background: url(../images/splash.jpg);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.index h3 {
+  margin-top: 0;
+  border-bottom: 1px solid rgba(255, 127, 0, 0.5)
+}
+
+.index p {
+  margin-top: 1rem;
+}
+
+img.splash {
+  display: block;
+
+  width: 480px;
+  margin: 0 auto;
+}
+
+#map {
+  height: 12rem;
+  width: 80%;
+  margin: 1rem auto;
+ }

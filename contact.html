@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Rock+Salt" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body>
+    <!--
+      NOTE: This header is the same across all three HTML files.
+      If you change it in one, make sure to update it in all three.
+    -->
+    <header>
+      <div class="logo">
+        Grevious
+      </div>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <main class="contact">
+      <div id="map"></div>
+      <ul>
+        <li>
+          <b>Address:</b> 307 Whites Path, South Yarmouth, MA 02664
+        </li>
+        <li>
+          <b>Phone:</b> <a href="tel:+1-508-619-7840">508-619-7840</a>
+        </li>
+        <li>
+          <b>Email:</b> <a href="mailto:info@grevious.com">info@grevious.com</a>
+        </li>
+      </ul>
+    </main>
+
+    <script>
+      function initMap() {
+        var latLong = {
+          lat: 41.690745,
+          lng: -70.189976
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: latLong
+        });
+
+        var marker = new google.maps.Marker({
+          position: latLong,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB6Ta--Qt_QCoJRmtHcsVcjTLZ9KrH_u0&callback=initMap">
+    </script>
+  </body>
+</html>
